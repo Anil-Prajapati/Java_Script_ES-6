@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [10, 20];
+        let arr1 = [30, 40];
+
+        //ES-5
+        arr.push.apply(arr, arr1)
+        console.log(arr)
+        console.log(arr1)
+
+        //ES-6
+
+        let arr3 = [10, 20, 30]
+        let arr4 = [10, 20, 30, 40]
+
+        arr3.push(...arr4)
+        console.log(arr3)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var Parent = function() {
+            this.desp1 = function() {
+                alert('this is the display function 1...')
+            }
+        }
+        var p = new Parent();
+        p.desp1();
+
+        var Employe = function() {
+            Parent.call(this);
+            this.disp2 = function() {
+                alert('this is the second display function 2.....')
+            }
+        }
+
+        var emp = new Employe()
+        emp.disp2();
+
+        //this are the second example 
+        var student = function() {
+            this.display1 = function() {
+                alert('this is the my fast display function...')
+            }
+
+        }
+
+        var st = new student();
+        st.display1();
+
+        var Employee = function() {
+            student.call(this)
+
+            this.display2 = function() {
+                alert('this is the my second display function...')
+            }
+        }
+
+        var Emp = new Employee();
+        Emp.display2();
+
+
+        var User = function() {
+            Employee.call(this)
+
+            this.display3 = function() {
+                alert('this is the my third display function...')
+            }
+        }
+
+        var user = new User();
+        user.display3();
+    </script>
+</body>
+
+</html>

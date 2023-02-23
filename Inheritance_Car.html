@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Car(Model, Price) {
+            this.Model = Model;
+            this.Price = Price;
+        }
+
+        function Bike(Model, Price) {
+            this.Model = Model;
+            this.Price = Price;
+        }
+
+        function Vihecal(Model) {
+            this.Model = Model;
+        }
+
+        Vihecal.prototype.run = function() {
+            console.log(this.Model + ' this model is running');
+        }
+
+        Car.prototype = Vihecal.prototype;
+        Bike.prototype = Vihecal.prototype;
+
+        var indica = new Car("indica", 10000);
+        var splendor = new Bike("splendor", 15000);
+        console.log(indica.run());
+        console.log(splendor.run());
+
+        console.log(indica)
+        console.log(splendor)
+    </script>
+</body>
+
+</html>

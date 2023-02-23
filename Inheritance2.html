@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var Person = function(name, age, add) {
+            this.name = name;
+            this.age = age;
+            this.add = add;
+
+            this.fullName = function() {
+                return this.name + '' + this.age;
+            }
+        }
+
+
+        function Student(name, age, add, roll, marks) {
+            Person.call(this, name, age, add);
+            this.roll = roll;
+            this.marks = marks;
+        }
+        let st = new Student('ANil Kumar Prajapati', 22, 'Uttar Pradesh', 175407, 95);
+        console.log(st)
+
+        // var s1 = st.fullName();
+        // console.log(s1)
+
+        function Employee(name, age, add, Eid, sal) {
+            Person.call(this, name, age, add);
+            this.Eid = Eid
+            this.sal = sal
+        }
+
+        var emp = new Employee('Rahul Kumar Prajapati', 21, 'Uttar Pradesh', 175407, 250000);
+        console.log(emp)
+    </script>
+</body>
+
+</html>

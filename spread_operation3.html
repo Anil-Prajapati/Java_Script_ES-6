@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [{
+            id: 101,
+            name: "ANil",
+            age: 22
+        }, {
+            id: 102,
+            name: "Rahul",
+            age: 20
+        }]
+
+        let arr1 = [...arr];
+        arr[0].name = 'Anil Kumar Prajapati';
+        console.log(arr[0].name, arr1[0].name)
+
+        console.log(arr)
+    </script>
+</body>
+
+</html>

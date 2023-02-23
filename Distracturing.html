@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let destructuring = {
+            name: 'Anil',
+            age: 22,
+            phoneNo: 8081489506,
+            collage: 'VBSPU jaunpur',
+        }
+
+        //ES-5
+        let ab1 = destructuring.name;
+        let ab2 = destructuring.age;
+        let ab3 = destructuring.phoneNo;
+        let ab4 = destructuring.collage;
+
+        console.log(`this is the name ${ab1} age ${ab2}  phoneNo ${ab3} collage ${ab4}`);
+
+
+        //ES-6 role-1 this role is comfatable then use this role only otherwise one role is there then use role no-2
+        //this method is colled by destructuring method 
+        let {
+            name,
+            age,
+            phoneNo,
+            collage
+        } = destructuring;
+        console.log(`name ${name}, age ${age},  phoneNo ${phoneNo}, collage ${collage}`)
+
+        //ES-6 role-2
+        let {
+            name: p,
+            age: q,
+            phoneNo: r,
+            collage: s
+
+        } = destructuring
+
+        console.log(`name ${p}, age ${q},  phoneNo ${r}, collage ${s}`)
+    </script>
+</body>
+
+</html>

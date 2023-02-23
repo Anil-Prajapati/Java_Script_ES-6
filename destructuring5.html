@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var Employe = {
+            name: 'Anil',
+            age: 22,
+            collage: "VBSPU jaunpur",
+            add: {
+                street: 'Uttar Pradesh ',
+                city: 'jaunpur',
+                pin: 222001
+            }
+        }
+
+        //ES-5
+        console.log(Employe.name)
+        console.log(Employe.age)
+        console.log(Employe.collage)
+        console.log(Employe.add.street)
+        console.log(Employe.add.city)
+        console.log(Employe.add.pin)
+
+        //ES-6
+        let {
+            street,
+            city,
+            pin
+        } = Employe.add
+        console.log(`street ${street} city ${city} pin ${pin}`)
+    </script>
+</body>
+
+</html>

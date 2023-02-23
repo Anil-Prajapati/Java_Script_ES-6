@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let destructuring = {
+            name: 'Anil',
+            age: 22,
+            phoneNo: 8081489506,
+            collage: 'VBSPU jaunpur',
+        }
+
+        //this type of declared
+        //ES-6 role-1
+        let {
+            name,
+            age,
+            phoneNo,
+            collage
+        } = destructuring;
+        console.log(`name ${name}, age ${age},  phoneNo ${phoneNo}, collage ${collage}`)
+
+        //this role is not currect
+        let {
+            a,
+            b,
+            c,
+            d
+        } = destructuring;
+        console.log(`name ${a}, age ${b},  phoneNo ${c}, collage ${d}`)
+
+
+        //ES-6 role-2
+        let {
+            name: p,
+            age: q,
+            phoneNo: r,
+            collage: s
+
+        } = destructuring
+
+        console.log(`name ${p}, age ${q},  phoneNo ${r}, collage ${s}`)
+    </script>
+</body>
+
+</html>

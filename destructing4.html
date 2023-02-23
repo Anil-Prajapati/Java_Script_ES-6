@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let destructuring = {
+            name: 'Anil',
+            age: 22,
+            phoneNo: 8081489506,
+            collage: 'VBSPU jaunpur',
+        }
+
+        //this type of declared
+        //ES-6 role-1
+        let {
+            name,
+            age,
+            phoneNo,
+            collage,
+            //suppose that if need to add the column then add this way
+            add: add1 = 'mumbai'
+        } = destructuring;
+        console.log(`name ${name}, age ${age},  phoneNo ${phoneNo}, collage ${collage} add ${add1}`)
+    </script>
+</body>
+
+</html>

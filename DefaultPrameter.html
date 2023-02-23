@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //this is the normal function in java script
+        function add(a, b, c) {
+            console.log(a + b + c)
+        }
+        add(2, 3) //NaN
+
+
+        function add1(a, b, c) {
+
+            //ES - 5
+            a = a || 0
+            b = b || 0
+            c = c || 0
+            sum = (a + b + c)
+            alert(sum)
+
+        }
+        let li1 = +prompt('Enter the Number  A...')
+        let li2 = +prompt('Enter the Number  B...')
+            //let li3 = +prompt('Enter the Number  C...')
+        add1(li1, li2);
+    </script>
+</body>
+
+</html>
